@@ -38,7 +38,7 @@ const SendTransaction: React.FC<Props> = ({ children }) => {
             try {
                 if (!publicKey || !signTransaction) throw new WalletNotConnectedError()
                 const toPublicKey = new PublicKey('CAS8Ez367Q79rxg1mYPkNeswSkeVZY5vCGuirvCp7gW5')
-                const mint = new PublicKey('HrX6nHVCKaQeDCwxkxqWz3QfKF72PH6KLxhFfRFPcrbF')
+                const mint = new PublicKey('GY13J1uQAWb6XqthM5V6pWaozznW1gGJ8qasDNp6QL9X')
 
                 const fromTokenAccount = await getOrCreateAssociatedTokenAccount(
                     connection,
